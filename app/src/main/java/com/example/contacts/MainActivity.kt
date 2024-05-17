@@ -50,25 +50,23 @@ private fun ListItem(name: String, prof: String) {
         elevation = cardElevation(5.dp),
         colors = CardDefaults.cardColors(Color.White)
     ) {
-        Box (
+        Row(
+            verticalAlignment = Alignment.CenterVertically
         ) {
-            Row(
-                verticalAlignment = Alignment.CenterVertically
+            Image(
+                modifier = Modifier
+                    .padding(5.dp)
+                    .size(74.dp)
+                    .clip(CircleShape),
+                painter = painterResource(id = R.drawable.doctor),
+                contentDescription = "Image",
+                contentScale = ContentScale.Crop
+            )
+            Column(
+                modifier = Modifier.padding(start = 16.dp)
             ) {
-                Image(
-                    modifier = Modifier
-                        .padding(5.dp)
-                        .size(74.dp)
-                        .clip(CircleShape),
-                    painter = painterResource(id = R.drawable.doctor),
-                    contentDescription = "Image",
-                    contentScale = ContentScale.Crop)
-                Column (
-                    modifier = Modifier.padding(start = 16.dp)
-                ) {
-                    Text(text = name)
-                    Text(text = prof)
-                }
+                Text(text = name)
+                Text(text = prof)
             }
         }
     }
@@ -80,26 +78,23 @@ private fun ListItem(name: String, prof: String) {
         elevation = cardElevation(5.dp),
         colors = CardDefaults.cardColors(Color.White)
     ) {
-        Box(
+        Row(
+            verticalAlignment = Alignment.CenterVertically
         ) {
-            Row(
-                verticalAlignment = Alignment.CenterVertically
+            Image(
+                modifier = Modifier
+                    .padding(5.dp)
+                    .size(74.dp)
+                    .clip(CircleShape),
+                painter = painterResource(id = R.drawable.coocker),
+                contentDescription = "Image",
+                contentScale = ContentScale.Crop
+            )
+            Column(
+                modifier = Modifier.padding(start = 16.dp)
             ) {
-                Image(
-                    modifier = Modifier
-                        .padding(5.dp)
-                        .size(74.dp)
-                        .clip(CircleShape),
-                    painter = painterResource(id = R.drawable.coocker),
-                    contentDescription = "Image",
-                    contentScale = ContentScale.Crop
-                )
-                Column(
-                    modifier = Modifier.padding(start = 16.dp)
-                ) {
-                    Text(text = name)
-                    Text(text = prof)
-                }
+                Text(text = name)
+                Text(text = prof)
             }
         }
     }
@@ -111,25 +106,23 @@ private fun ListItem(name: String, prof: String) {
         elevation = cardElevation(5.dp),
         colors = CardDefaults.cardColors(Color.White)
     ) {
-        Box (
+        Row(
+            verticalAlignment = Alignment.CenterVertically
         ) {
-            Row(
-                verticalAlignment = Alignment.CenterVertically
+            Image(
+                modifier = Modifier
+                    .padding(5.dp)
+                    .size(74.dp)
+                    .clip(CircleShape),
+                painter = painterResource(id = R.drawable.model),
+                contentDescription = "Image",
+                contentScale = ContentScale.Crop
+            )
+            Column(
+                modifier = Modifier.padding(start = 16.dp)
             ) {
-                Image(
-                    modifier = Modifier
-                        .padding(5.dp)
-                        .size(74.dp)
-                        .clip(CircleShape),
-                    painter = painterResource(id = R.drawable.model),
-                    contentDescription = "Image",
-                    contentScale = ContentScale.Crop)
-                Column (
-                    modifier = Modifier.padding(start = 16.dp)
-                ) {
-                    Text(text = name)
-                    Text(text = prof)
-                }
+                Text(text = name)
+                Text(text = prof)
             }
         }
     }
