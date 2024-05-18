@@ -119,7 +119,7 @@ private fun ListItem(name: String, prof: String) {
                 contentScale = ContentScale.Crop
             )
             Column(
-                modifier = Modifier.padding(start = 16.dp)
+                modifier = Modifier.padding(start = 15.dp)
             ) {
                 Text(text = name)
                 Text(text = prof)
